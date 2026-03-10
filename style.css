@@ -1,0 +1,18 @@
+body
+{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    
+}
+.css-input-selection, p
+{
+    align-items: center;
+}
+.css-add-button
+{
+    border-radius: 25%;
+    background-color: blue;
+    color: white;
+    border: none;
+    width: stretch;
+}
