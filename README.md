@@ -1,0 +1,1 @@
+The name of this project is a developer task manager. It's similar to Notion but here developers can track all their tasks. The technologies used in this project are -HTML, css, and js. 

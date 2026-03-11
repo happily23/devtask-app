@@ -7,12 +7,25 @@ body
 .css-input-selection, p
 {
     align-items: center;
+    font-weight: bold;
+    
 }
-.css-add-button
+::placeholder
 {
-    border-radius: 25%;
-    background-color: blue;
+    color: #555;
+    font-style: italic;
+}
+.css-add-button, .css-button
+{
+    background-color: gray;
+    padding: 2.5px;
     color: white;
     border: none;
-    width: stretch;
+    display: inline-block ;
+}
+
+.interval-animation-js img
+{
+    width:150px;
+    border-radius:10px;
 }
