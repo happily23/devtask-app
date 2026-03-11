@@ -1,19 +1,26 @@
-let animation = document.querySelector('.interval-animation-js');
+const tasks = [];
 
-let showCat = true;
-function repeat()
-{
-    if(showCat)
-    {
-         animation.innerHTML = `<img src="https://static.vecteezy.com/system/resources/thumbnails/036/146/780/small_2x/ai-generated-cute-tabby-kitten-sitting-on-floor-and-looking-at-camera-photo.jpg">`;
-    }
-    else
-    {
-        animation.innerHTML = `Hello`;
-    }
-    showCat = !showCat;
-    
-    
-}
+const input = document.querySelector('.js-textbox-input');
+const button = document.querySelector('.js-add-button');
+const container = document.querySelector('.task-container');
 
-//setInterval( repeat, 2000);
+button.addEventListener('click',
+    () => {
+        const task = input.value;
+        tasks.push(task);
+
+        let html = "";
+
+        tasks.forEach(
+            (task) => 
+            {
+                html += `<div> ${task}
+                <button> Complete </button>
+                </div>`;
+            }
+        );
+
+        container.innerHTML = html;
+        input.value = "";
+    }
+)
